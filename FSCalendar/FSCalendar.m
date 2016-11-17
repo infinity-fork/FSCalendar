@@ -1618,7 +1618,7 @@ typedef NS_ENUM(NSUInteger, FSCalendarOrientation) {
         [self.collectionView selectItemAtIndexPath:[self.collectionView indexPathForCell:cell] animated:NO scrollPosition:UICollectionViewScrollPositionNone];
     }
     [cell configureAppearance];
-    
+    [self setScope:FSCalendarScopeWeek animated:YES];
 }
 
 - (void)deselectCounterpartDate:(NSDate *)date
